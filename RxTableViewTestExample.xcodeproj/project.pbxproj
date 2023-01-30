@@ -10,17 +10,19 @@
 		D8E011482987FD5F00D8B421 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E011472987FD5F00D8B421 /* AppDelegate.swift */; };
 		D8E0114A2987FD5F00D8B421 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E011492987FD5F00D8B421 /* SceneDelegate.swift */; };
 		D8E0114C2987FD5F00D8B421 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8E0114B2987FD5F00D8B421 /* ViewController.swift */; };
-		D8E0114F2987FD5F00D8B421 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E0114D2987FD5F00D8B421 /* Main.storyboard */; };
 		D8E011512987FD6200D8B421 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8E011502987FD6200D8B421 /* Assets.xcassets */; };
 		D8E011542987FD6200D8B421 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8E011522987FD6200D8B421 /* LaunchScreen.storyboard */; };
+		E446F6D4AAC8FF8E89F43F29 /* libPods-RxTableViewTestExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A6EF258B26AC50536337461 /* libPods-RxTableViewTestExample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2A6EF258B26AC50536337461 /* libPods-RxTableViewTestExample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RxTableViewTestExample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F4D6273716478B2F718B35A /* Pods-RxTableViewTestExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTableViewTestExample.release.xcconfig"; path = "Target Support Files/Pods-RxTableViewTestExample/Pods-RxTableViewTestExample.release.xcconfig"; sourceTree = "<group>"; };
+		CF9869D537D7D15CD44E41E9 /* Pods-RxTableViewTestExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxTableViewTestExample.debug.xcconfig"; path = "Target Support Files/Pods-RxTableViewTestExample/Pods-RxTableViewTestExample.debug.xcconfig"; sourceTree = "<group>"; };
 		D8E011442987FD5F00D8B421 /* RxTableViewTestExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxTableViewTestExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8E011472987FD5F00D8B421 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D8E011492987FD5F00D8B421 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D8E0114B2987FD5F00D8B421 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D8E0114E2987FD5F00D8B421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D8E011502987FD6200D8B421 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8E011532987FD6200D8B421 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8E011552987FD6200D8B421 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -31,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E446F6D4AAC8FF8E89F43F29 /* libPods-RxTableViewTestExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		219FF236733B19DA91D932BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CF9869D537D7D15CD44E41E9 /* Pods-RxTableViewTestExample.debug.xcconfig */,
+				7F4D6273716478B2F718B35A /* Pods-RxTableViewTestExample.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		964B48B12212F87A3BA2E856 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2A6EF258B26AC50536337461 /* libPods-RxTableViewTestExample.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D8E0113B2987FD5F00D8B421 = {
 			isa = PBXGroup;
 			children = (
 				D8E011462987FD5F00D8B421 /* RxTableViewTestExample */,
 				D8E011452987FD5F00D8B421 /* Products */,
+				219FF236733B19DA91D932BF /* Pods */,
+				964B48B12212F87A3BA2E856 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,7 +82,6 @@
 				D8E011472987FD5F00D8B421 /* AppDelegate.swift */,
 				D8E011492987FD5F00D8B421 /* SceneDelegate.swift */,
 				D8E0114B2987FD5F00D8B421 /* ViewController.swift */,
-				D8E0114D2987FD5F00D8B421 /* Main.storyboard */,
 				D8E011502987FD6200D8B421 /* Assets.xcassets */,
 				D8E011522987FD6200D8B421 /* LaunchScreen.storyboard */,
 				D8E011552987FD6200D8B421 /* Info.plist */,
@@ -74,6 +96,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D8E011582987FD6200D8B421 /* Build configuration list for PBXNativeTarget "RxTableViewTestExample" */;
 			buildPhases = (
+				CFA20D62680E0188E05CC832 /* [CP] Check Pods Manifest.lock */,
 				D8E011402987FD5F00D8B421 /* Sources */,
 				D8E011412987FD5F00D8B421 /* Frameworks */,
 				D8E011422987FD5F00D8B421 /* Resources */,
@@ -127,11 +150,35 @@
 			files = (
 				D8E011542987FD6200D8B421 /* LaunchScreen.storyboard in Resources */,
 				D8E011512987FD6200D8B421 /* Assets.xcassets in Resources */,
-				D8E0114F2987FD5F00D8B421 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CFA20D62680E0188E05CC832 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RxTableViewTestExample-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D8E011402987FD5F00D8B421 /* Sources */ = {
@@ -147,14 +194,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D8E0114D2987FD5F00D8B421 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D8E0114E2987FD5F00D8B421 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D8E011522987FD6200D8B421 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -282,6 +321,7 @@
 		};
 		D8E011592987FD6200D8B421 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CF9869D537D7D15CD44E41E9 /* Pods-RxTableViewTestExample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -292,7 +332,6 @@
 				INFOPLIST_FILE = RxTableViewTestExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -310,6 +349,7 @@
 		};
 		D8E0115A2987FD6200D8B421 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F4D6273716478B2F718B35A /* Pods-RxTableViewTestExample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -320,7 +360,6 @@
 				INFOPLIST_FILE = RxTableViewTestExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
